@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #CEA2AC;
+background: linear-gradient(0deg, #CEA2AC 0%, #F7CBD4, #F7CBD4, #CEA2AC 100%);
+  background-size: cover;
+  background-position: center;
+  color:#012A36;
+  }
+  
+  .container{
+    position: relative;
+    width: 400px;
+    background: #D6E7EE;
+    padding: 60px 40px;
+     border: 10px double #012A36;
+    border-radius: 10px;
+    margin-top: 15px;
+      
+
+  }
+  header{
+font-size: 40px;
+margin-bottom: 60px;
+color: #012A36;
+
+
+  }
+  .input_feild,form .button{
+margin: 25px 0;
+position: relative;
+height: 50px;
+width: 100%
+
+  }
+
+  .input_feild input{
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #012A36;
+    border-color:#012A36;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+   
+      
+  }
+  
+input:focus{
+    border:3px solid;
+}
+.input_field label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    left: 15px;
+    pointer-events: none;
+    color: grey;
+    font-size: 18px;
+    transition: .4s;
+  }
+
+  .button button{
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #CED0DD;
+    background-color: #012A36;
+    font-size: 20px;
+    cursor: pointer;
+   
+  }
