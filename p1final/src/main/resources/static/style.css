@@ -80,7 +80,7 @@ input:focus{
   }
     .EMP-container{
     position: relative;
-    top: 60px;
+    top: 100px;
     width: 800px;
     background: #D6E7EE;
     padding: 60px 40px;
@@ -145,4 +145,54 @@ input:focus{
 	 color: #CED0DD;
 	background-color: #012A36;
     font-size: 20px;
+  }
+   .AE-container{
+    position: relative;
+    top: 50x;
+    width: 800px;
+    background: #D6E7EE;
+    padding: 60px 100px;
+     border: 10px double #012A36;
+    border-radius: 10px;
+    margin-top: 15px;
+      
+
+  }
+  
+    .ret-bttn{
+  margin: 25px 0;
+	position: absolute;
+	top:200px;
+	right:300px;
+	height: 50px;
+	width: 140px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	 color: #CED0DD;
+	background-color: #012A36;
+    font-size: 20px;
+  }
+  
+  .PRR-container{
+    position: relative;
+    top: 50x;
+    width: 800px;
+    background: #D6E7EE;
+    padding: 60px 100px;
+     border: 10px double #012A36;
+    border-radius: 10px;
+    margin-top: 15px;
+      
+
+  }
+    .ARR-container{
+    position: relative;
+    top: 50x;
+    width: 800px;
+    background: #D6E7EE;
+    padding: 60px 100px;
+     border: 10px double #012A36;
+    border-radius: 10px;
+    margin-top: 15px;
+      
+
   }

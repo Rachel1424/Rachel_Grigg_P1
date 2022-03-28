@@ -6,7 +6,6 @@ async function loginEmp() {
 	var password = document.getElementById("password").value;
 	
 	let data = {username: username, password: password};
-	
 	console.log(data);
 	
 	await fetch("/users/login", {
@@ -32,23 +31,22 @@ async function loginEmp() {
 	});
 };
 
-function loginMan() {
+async function loginMan() {
 	
-	var manuser = document.getElementById("username2").value;
+	var username = document.getElementById("username").value;
 	
-	var manpass = document.getElementById("password2").value;
+	var password = document.getElementById("password").value;
 	
-	let data = {username: manuser, password: manpass};
-	
+	let data = {username: username, password: password};
 	console.log(data);
 	
-	fetch("/users/login", {
-		method: "POST",
-		headers: {'Content-Type': 'application/json'}, 
+	await fetch("/users/login", {
+		 method: "POST",
+  		headers: {'Content-Type': 'application/json'}, 
   		body: JSON.stringify(data)
 	}).then(res => {
-		
-		if(res.status !== 200) {
+		console.log(res.status);
+		if(res.status !== 200 ) {
 			
 			//if login attempt fails
 			alert("Incorrect Info Please Try again");
@@ -57,7 +55,7 @@ function loginMan() {
 		else {
 			
 			// Redirecting to other page.
-			window.location = "managerPage.html"; 
+			window.location = "MngPg.html"; 
 		}
 		
 	  console.log("Request complete! response:", res);
@@ -88,7 +86,7 @@ function viewInfo() {
 
 function appDeny() {
 	
-	window.location = "approveDeny.html";
+	window.location = "PRR.html";
 }
 
 function allPend() {
@@ -96,13 +94,13 @@ function allPend() {
 	window.location = "VPR.html";
 }
 
-function viewAll() {
+function allRez() {
 	
-	window.location = "allRequests.html";
+	window.location = "ARR.html";
 }
 function viewEmp() {
 	
-	window.location = "allEmployees.html";
+	window.location = "VAE.html";
 }
 function viewID() {
 	
