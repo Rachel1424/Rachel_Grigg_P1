@@ -122,11 +122,11 @@ async function newRemb(){
 	
 	console.log("Type input:"+type);
 	
-	let rembInfo = {reimb_amount: amount, reimb_description: description, reimb_author: empId}
+	let rembInfo = {reimb_amount: amount, reimb_description: description, reimb_author: empId,type:type}
 	
 	console.log(rembInfo);
 	
-	let response = await fetch(`/reimbursement`, {
+	let response = await fetch("/reimbursement", {
 		 method: "POST",
   		headers: {'Content-Type': 'application/json'}, 
   		body: JSON.stringify(rembInfo)
