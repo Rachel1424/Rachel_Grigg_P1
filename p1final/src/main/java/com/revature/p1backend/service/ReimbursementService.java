@@ -17,5 +17,6 @@ public interface ReimbursementService {
 	public Reimbursement updateReimbursementStatus(int id,int status);
 	
 	public List<Reimbursement> findByAuthor(int id);
-
+	
+	public Reimbursement postReimb(Reimbursement r);
 }

@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,4 +37,10 @@ public class ReimbursementController {
 	public List<Reimbursement> getReimbursementByUser(@PathVariable int authorId) {
 		return reimbursementService.findByAuthor(authorId);
 	}
+	@PostMapping("/reimbursement")
+    public Reimbursement addReimbursement(Reimbursement r) {
+
+        return reimbursementService.postReimb(r);
+    }
 }
+

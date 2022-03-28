@@ -1,5 +1,6 @@
 package com.revature.p1backend.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,4 +54,21 @@ public class ReimbursementServiceImpl implements ReimbursementService {
 		// TODO Auto-generated method stub
 		return reimbursementRepository.findByAuthor(id);
 	}
+	public Reimbursement postReimb(Reimbursement r) {
+
+        if (r != null) {
+            r.setSubmitted(new Date());
+            r.setResolved(new Date());
+//            r.setDescription(String description);
+//            remb.setAuthor(int author);
+            r.setResolver(1);
+            r.setStatus(1);
+            r.setType(1);
+
+            reimbursementRepository.save(r);
+        }
+
+        return r;
+    }
 }
+

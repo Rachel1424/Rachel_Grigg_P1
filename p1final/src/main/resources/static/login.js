@@ -1,4 +1,4 @@
-function loginEmp() {
+async function loginEmp() {
 	
 	//gets the inputs from the employee's entry and assigns them to variables'
 	var username = document.getElementById("username").value;
@@ -9,12 +9,12 @@ function loginEmp() {
 	
 	console.log(data);
 	
-	fetch("/users/login", {
+	await fetch("/users/login", {
 		 method: "POST",
   		headers: {'Content-Type': 'application/json'}, 
   		body: JSON.stringify(data)
 	}).then(res => {
-		
+		console.log(res.status);
 		if(res.status !== 200 ) {
 			
 			//if login attempt fails
@@ -25,6 +25,7 @@ function loginEmp() {
 			
 			// Redirecting to other page.
 			window.location = "EmpPg.html"; 
+			
 		}
 		
 	  console.log("Request complete! response:", res);
@@ -66,22 +67,22 @@ function loginMan() {
 
 function logOut() {
 	
-	window.location = "index.html";
+	window.location.href = "index.html";
 }
 
 function rembReq() {
 	
-	window.location = "request.html";
+	window.location = "NRR.html";
 }
 
 function oldReq() {
 	
-	window.location = "oldRequests.html";
+	window.location = "RRR.html";
 }
 
 function viewInfo() {
 	
-	window.location = "empInfo.html";
+	window.location = "CHI.html";
 }
 
 
@@ -92,7 +93,7 @@ function appDeny() {
 
 function allPend() {
 	
-	window.location = "allPending.html";
+	window.location = "VPR.html";
 }
 
 function viewAll() {
