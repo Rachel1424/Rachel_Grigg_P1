@@ -129,3 +129,8 @@ function ret() {
 	
 	window.location = "MngPg.html";
 }
+
+function retE() {
+	
+	window.location = "EmpPg.html";
+}

@@ -60,6 +60,8 @@ input:focus{
   .login_button button{
     width: 100%;
     height: 100%;
+    position:relative;
+    top:10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #CED0DD;
     background-color: #012A36;
@@ -162,8 +164,8 @@ input:focus{
     .ret-bttn{
   margin: 25px 0;
 	position: absolute;
-	top:200px;
-	right:300px;
+	top:250px;
+	right:330px;
 	height: 50px;
 	width: 140px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -196,3 +198,55 @@ input:focus{
       
 
   }
+  
+  
+    .sm-bttn{
+  margin: 25px 0;
+	position: relative;
+	
+	height: 30px;
+	width: 100px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	 color: #CED0DD;
+	background-color: #012A36;
+    font-size: 20px;
+  }
+   
+   .ln-bttn{
+  margin: 25px 0;
+	position: relative;
+	
+	height: 30px;
+	width: 300px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	 color: #CED0DD;
+	background-color: #012A36;
+    font-size: 20px;
+  }
+  
+  
+  .input_feild {
+   	padding:5px;
+   	}
+   	
+   	.chi-container{
+   	position: relative;
+   	top:50px;
+    width: 400px;
+    background: #D6E7EE;
+    padding: 60px 40px;
+     border: 10px double #012A36;
+    border-radius: 10px;
+    margin-top: 15px;
+      
+
+  }
+   	
+    .AE-dis{
+    position: relative;
+    right:15px;
+    padding:10px;
+    }
+   
+   
+      

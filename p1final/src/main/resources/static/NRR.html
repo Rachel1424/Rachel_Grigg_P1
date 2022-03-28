@@ -4,7 +4,7 @@
 <meta charset="ISO-8859-1">
 
     <link rel="stylesheet" href= "style.css">
-	<script src="login.js"> </script>
+	<script src="Emp.js"> </script>
 	
 <title>Employee Page</title>
 </head>
@@ -13,20 +13,24 @@
 <div class="NRR-container">
 <header>New Reimbursement<header>
 
+ <div class="input_feild">
+        <input type="number" id="empId"  placeholder="Employee Id" >
+        </div>
+        
 <div class="input_feild">
-     <input type="number" id="amount" min="1" placeholder = "Amount">
+     <input type="number" id="amount" min="1" placeholder = "Amount $0.00">
       </div>
-  <select name="type" class = r-type> 
+  <select name="type" class = r-type id= "type"> 
             <option value="Travel">Travel</option> 
-            <option value="Purchase">Purchase</option> 
+            <option value="Purchases">Purchases</option> 
             <option value="Living Expenses">Living Expenses</option> 
         </select>
         
      
-      <div>
+      <div class="input_feild">
        <input type="text" id="description" placeholder = "Discription?">
       </div>
-       <button type="button" class="sub-bttn" onclick=> Submit </button>
+       <button type="button" class="sub-bttn" onclick= newRemb()> Submit </button>
 </div>
 
 <form >
