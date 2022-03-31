@@ -56,7 +56,28 @@ input:focus{
     border:3px solid;
 }
 
-
+  .input_feild {
+   	padding:5px;
+   	}
+   	
+   	
+  .input_rsc input{
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #012A36;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+   
+   
+  }
+  .input_rsc {
+  	position: relative;
+  	top:10px;
+   	padding:5px;
+   	}
+   	
   .login_button button{
     width: 100%;
     height: 100%;
@@ -79,6 +100,16 @@ input:focus{
 	 color: #CED0DD;
 	background-color: #012A36;
     font-size: 20px;
+  }
+  .sub-bttn{
+   
+	position: relative;
+	top: -50px;
+	right:-200px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	 color: #CED0DD;
+	background-color: #012A36;
+    font-size: 14px;
   }
     .EMP-container{
     position: relative;
@@ -141,7 +172,7 @@ input:focus{
    .sub-bttn{
   margin: 25px 0;
 	position: relative;
-	height: 50px;
+	height: 45px;
 	width: 140px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	 color: #CED0DD;
@@ -150,22 +181,22 @@ input:focus{
   }
    .AE-container{
     position: relative;
-    top: 50x;
-    width: 800px;
+    top: 50px;
     background: #D6E7EE;
     padding: 60px 100px;
      border: 10px double #012A36;
     border-radius: 10px;
     margin-top: 15px;
-      
+     overflow-wrap: break-word;
 
   }
+
   
     .ret-bttn{
   margin: 25px 0;
-	position: absolute;
-	top:250px;
-	right:330px;
+	position: relative;
+	top:200px;
+	right:10px;
 	height: 50px;
 	width: 140px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -225,10 +256,7 @@ input:focus{
   }
   
   
-  .input_feild {
-   	padding:5px;
-   	}
-   	
+
    	.chi-container{
    	position: relative;
    	top:50px;
@@ -241,6 +269,11 @@ input:focus{
       
 
   }
+  .rcs-ret{
+  position: relative;
+   	top:50px;
+   	right:10px;
+  }
    	
     .AE-dis{
     position: relative;
@@ -248,5 +281,16 @@ input:focus{
     padding:10px;
     }
    
-   
+       .ret-bttnS{
+  margin: 25px 0;
+	position: relative;
+	
+	right:10px;
+	height: 50px;
+	width: 140px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	 color: #CED0DD;
+	background-color: #012A36;
+    font-size: 20px;
+  }
       

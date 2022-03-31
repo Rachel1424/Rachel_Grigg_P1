@@ -43,6 +43,7 @@ public class ReimbursementServiceImpl implements ReimbursementService {
 		Reimbursement reimburse = null;
 		reimburse = findById(id);
 		if (reimburse != null) {
+			 reimburse.setResolved(new Date());
 			reimburse.setStatus(status);
 			reimbursementRepository.save(reimburse);
 		}
@@ -55,12 +56,13 @@ public class ReimbursementServiceImpl implements ReimbursementService {
 		return reimbursementRepository.findByAuthor(id);
 	}
 	public Reimbursement postReimb(Reimbursement r) {
-
+		Reimbursement remb = null;
+		remb = r;
         if (r != null) {
             r.setSubmitted(new Date());
-            r.setResolved(new Date());
-//            r.setDescription(String description);
-//            remb.setAuthor(int author);
+      //      r.setResolved(new Date());
+    //       r.setDescription(String description);
+        //  remb.setAuthor(int author);
             r.setResolver(1);
             r.setStatus(1);
             r.setType(1);

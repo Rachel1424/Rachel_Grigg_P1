@@ -27,21 +27,84 @@ async function empTable() {
 }
 }
 
+
 async function rembTable() {
 	
 	let response = await fetch('/reimbursement');
 	
 	let rembList = await response.json();
-	
 	let rembBody = document.getElementById("rembBody");
 	
-	console.log(rembList);
+
 
 	for(let index = 0; index < rembList.length; index++) {
 		
 		let element = rembList[index];
 		
+
 		rembBody.innerHTML +=
+	
+		`
+		<tr>
+      
+        <td class = "text-center">${element.id}</td>
+        <td class = "text-center">${element.amount}</td>
+        <td class = "text-center">${element.description}</td>
+        <td class = "text-center">${element.author}</td>
+        <td class = "text-center">${element.submitted}</td>
+        <td class = "text-center">${element.type}</td>
+
+        </tr>`;
+}
+}
+async function rembTableS() {
+	
+	let response = await fetch('/reimbursement');
+	
+	let rembList = await response.json();
+	let rembBodys = document.getElementById("rembBodys");
+	
+
+
+	for(let index = 0; index < rembList.length; index++) {
+		
+		let element = rembList[index];
+		
+
+		rembBodys.innerHTML +=
+	
+		`
+		<tr>
+      
+        <td class = "text-center">${element.id}</td>
+        <td class = "text-center">${element.amount}</td>
+        <td class = "text-center">${element.description}</td>
+        <td class = "text-center">${element.author}</td>
+        <td class = "text-center">${element.submitted}</td>
+        <td class = "text-center">${element.resolved}</td>
+        <td class = "text-center">${element.resolver}</td>
+        <td class = "text-center">${element.status}</td>
+        <td class = "text-center">${element.type}</td>
+
+        </tr>`;
+}
+}
+async function rembTableP() {
+	
+	let response = await fetch('/reimbursement');
+	
+	let rembList = await response.json();
+	let rembBodyp = document.getElementById("rembBodys");
+	
+
+
+	for(let index = 0; index < rembList.length; index++) {
+		
+		let element = rembList[index];
+		
+
+		rembBodyp.innerHTML +=
+	
 		`
 		<tr>
       

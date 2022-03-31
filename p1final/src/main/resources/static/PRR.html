@@ -7,7 +7,7 @@
 	
 </head>
 
-  <body onload=rembTable()> 
+  <body onload=rembTableS()> 
  
 	<div class="WE-container">
 <h1 class = "WE" >View All Pending Requests</h1>
@@ -20,6 +20,7 @@
         <tr>
           <th class="text-center">Id</th>
           <th class="text-center">Description</th>
+          <th class="text-center">Amount</th>
           <th class="text-center">Author</th>
           <th class="text-center">Submitted</th>
           <th class="text-center">Resolved</th>
@@ -30,13 +31,19 @@
           
         </tr>
       </thead>
-      <tbody id="tableBody">
+      <tbody id="rembBodys">
         <!-- Data dynamically populated -->
      
         
       </tbody>
     </table>
-     <button type="button" class="ret-bttn" onclick=ret()> Return </button>
+    
+    <div class="rcs-ret">
+    <label for="status">Enter Request ID:</label><br>
+        <input type="text" id="status" name="status" class="input_rsc" ><br>
+        <button type="button" class="sub-bttn" onclick=retE()> Submit </button>
+        </div>
+     <button type="button" class="ret-bttnS" onclick=retE()> Return </button>
   </div>	
 	
 		

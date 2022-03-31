@@ -117,12 +117,14 @@ async function newRemb(){
 	let empId = document.getElementById("empId").value
 	
 	let type = document.getElementById("type").value
-
 	
+	let datesubmitted = Date()
+	
+	status
 	
 	console.log("Type input:"+type);
 	
-	let rembInfo = {reimb_amount: amount, reimb_description: description, reimb_author: empId,type:type}
+	let rembInfo = {reimb_amount: amount, reimb_submitted: datesubmitted , reimb_description: description, reimb_author: empId, reimb_type_Id:type}
 	
 	console.log(rembInfo);
 	
